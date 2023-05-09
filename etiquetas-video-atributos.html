@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Video</title>
+</head>
+<body>
+    <h1>Etiqueta Video</h1>
+    <p>La etiqueta video tiene el atributo controls que sirve para permitir que se muestren los botones para reproducir el video, volúmen, línea de tiempo, etc</p>
+    <p>También tiene el atributo preload que sirve para que el video se carga mientras también se carga la página y así optimizar el tiempo de reproducción</p>
+    <p>Para configurar un tiempo de inicio y de fin, diferente al del video original, se agrega "#t=tiempo-inicio,tiempo-final" al final de la url del video. Ej. </p>
+    <p>src="/video/islas-del-rosario.mp4#t=3,17"</p>
+    <main>
+        <video controls preload="auto">
+            <source src="/video/islas-del-rosario.mp4#t=3,17"/>
+            <source src="/video/islas-del-rosario.webm#t=3,17"/>
+        </video>
+    </main>
+</body>
+</html>
